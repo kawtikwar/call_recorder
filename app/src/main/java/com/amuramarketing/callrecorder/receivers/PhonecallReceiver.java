@@ -107,7 +107,6 @@ public class PhonecallReceiver extends BroadcastReceiver {
         stopRecording(ctx);
         Log.e("onIncomingCallEnded", "called");
         insertRecord(ctx, callType, number, filePath, start, end);
-
     }
 
     protected void onOutgoingCallEnded(Context ctx, String number, String callType, long start, long end) {

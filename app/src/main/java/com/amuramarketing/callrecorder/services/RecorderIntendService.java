@@ -49,11 +49,6 @@ public class RecorderIntendService extends IntentService {
             if (recorder==null)
             recorder = new MediaRecorder();
             recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-
-
-            recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-
-
             recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
             recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
             recorder.setOutputFile(amr.getAbsolutePath());

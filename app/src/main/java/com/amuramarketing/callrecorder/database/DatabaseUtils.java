@@ -103,7 +103,9 @@ public class DatabaseUtils {
             SQLiteDatabase db = getDatabaseInstance(context);
 
             // db.get
-            String sql = "SELECT * FROM " + TB_CALL_INFO + " WHERE " + DURATION + " > 0 AND " + IS_SYNC + " =0";
+            String sql = "SELECT * FROM " + TB_CALL_INFO + " WHERE " + IS_SYNC + " =0";
+//            String sql = "SELECT * FROM " + TB_CALL_INFO + " WHERE " + DURATION + " > 0 AND " + IS_SYNC + " =0";
+
 
             Cursor cursor = db.rawQuery(sql, null);
             if (cursor != null) {

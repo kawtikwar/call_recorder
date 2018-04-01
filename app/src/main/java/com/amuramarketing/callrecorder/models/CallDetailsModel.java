@@ -33,6 +33,16 @@ public class CallDetailsModel implements Serializable{
     @SerializedName("call_date")
     private String date;
 
+    private String name;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     @SerializedName("is_sync")
     private int is_sync;

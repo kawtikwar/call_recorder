@@ -13,9 +13,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         super(context, DatabaseUtils.DATABASE_NAME, null, DatabaseUtils.DATABASE_VERSION);
     }
 
-
-
-    
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(DatabaseUtils.CREATE_TB_CALL_INFO);

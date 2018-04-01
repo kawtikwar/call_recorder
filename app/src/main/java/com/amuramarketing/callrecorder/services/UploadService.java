@@ -3,7 +3,6 @@ package com.amuramarketing.callrecorder.services;
 import android.app.IntentService;
 import android.content.Intent;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.amuramarketing.callrecorder.database.DatabaseUtils;
 import com.amuramarketing.callrecorder.models.CallDetailsModel;
@@ -42,7 +41,7 @@ public class UploadService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
         if (intent != null) {
-            Toast.makeText(this, "Inside Upload service", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Inside Upload service", Toast.LENGTH_SHORT).show();
           //  uploadCallLogs();
         }
     }
